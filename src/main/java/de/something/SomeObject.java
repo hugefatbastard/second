@@ -3,6 +3,7 @@ package de.something;
 public class SomeObject {
 
     private boolean invoked;
+    private boolean passed;
 
     public void doSomething() {
         invoked = true;
@@ -10,6 +11,13 @@ public class SomeObject {
 
 
     public boolean check() {
-        return invoked;
+        return invoked || passed;
+    }
+
+    public void passSomething(String something) {
+        if (something == null) {
+            throw new IllegalArgumentException();
+        }
+        passed = true;
     }
 }
