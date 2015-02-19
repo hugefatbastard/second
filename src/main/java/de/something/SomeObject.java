@@ -14,10 +14,7 @@ public class SomeObject {
         return invoked || passed;
     }
 
-    public void passSomething(String something) {
-        if (something == null) {
-            throw new IllegalArgumentException();
-        }
+    public void passSomething() {
         passed = true;
     }
 }

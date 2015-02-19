@@ -15,7 +15,7 @@ public class FirstTest {
     @Test
     public void passTest() throws Exception {
         SomeObject someObject = new SomeObject();
-        someObject.passSomething("something");
+        someObject.passSomething();
         Assert.assertEquals(true, someObject.check());
     }
 }
