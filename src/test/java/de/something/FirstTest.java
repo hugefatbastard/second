@@ -9,7 +9,7 @@ public class FirstTest {
     @Test
     public void firstTest() throws Exception {
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
     }
 
     @Test
