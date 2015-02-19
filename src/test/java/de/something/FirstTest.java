@@ -11,4 +11,11 @@ public class FirstTest {
 
         Assert.assertTrue(true);
     }
+
+    @Test
+    public void secondTest() throws Exception {
+        SomeObject someObject = new SomeObject();
+        someObject.doSomething();
+        Assert.assertEquals(true, someObject.check());
+    }
 }
